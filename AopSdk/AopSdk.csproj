@@ -1,0 +1,46 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <TargetFrameworks>net471;netcoreapp2.2;netstandard2.0</TargetFrameworks>
+
+    <IsPackable>true</IsPackable>
+    <LangVersion>latest</LangVersion>
+    <AssemblyName>AopSdk</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <FileVersion>2.0.0.0</FileVersion>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <ItemGroup Condition=" '$(TargetFramework)' == 'netcoreapp2.2' ">
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.5.0" />
+  </ItemGroup>
+
+  <ItemGroup Condition=" '$(TargetFramework)' == 'netstandard2.0' ">
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.5.0" />
+  </ItemGroup>
+
+  <ItemGroup Condition=" '$(TargetFramework)' == 'net471' ">
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <Compile Remove="PropertiesHelper.cs" />
+    <Compile Remove="SecurityHelpers.cs" />
+    <Compile Remove="Test\TestImage.cs" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <None Remove="readme.txt" />
+    <None Remove="Test\aop-sandbox-RSA-private-c#.pem" />
+    <None Remove="Test\public-key.pem" />
+    <None Remove="version.txt" />
+  </ItemGroup>
+
+</Project>

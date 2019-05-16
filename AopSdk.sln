@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.572
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AopSdk.Tests", "AopSdk.Tests\AopSdk.Tests.csproj", "{77673AF4-945D-4285-9400-DE2B3469AE91}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AopSdk", "AopSdk\AopSdk.csproj", "{12FADBF2-BCB0-4937-8248-EFCBC5C87963}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{77673AF4-945D-4285-9400-DE2B3469AE91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77673AF4-945D-4285-9400-DE2B3469AE91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77673AF4-945D-4285-9400-DE2B3469AE91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77673AF4-945D-4285-9400-DE2B3469AE91}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12FADBF2-BCB0-4937-8248-EFCBC5C87963}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12FADBF2-BCB0-4937-8248-EFCBC5C87963}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12FADBF2-BCB0-4937-8248-EFCBC5C87963}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12FADBF2-BCB0-4937-8248-EFCBC5C87963}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FBE742E5-C916-48C8-B70F-511404C30E4F}
+	EndGlobalSection
+EndGlobal
